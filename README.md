@@ -103,3 +103,41 @@ Hilo Doble
 - Planning Poker
 - Zoom
 
+## Required 
+* PHP 7.4 min
+* Composer installed
+
+## How to install the project: 
+* Clone git https://github.com/anaruedaguiu/hogwartsExpressApp.git
+* Composer install
+* Install dependencies in a Visual Studio Code terminal:
+  - Run ***npm install*** or ***npm update*** command
+  - Run ***npm run dev*** command
+* Run the server in a Visual Studio Code new terminal using:
+  - ***php artisan serve*** command
+* Create a local database on phpMyAdmin with - user : root, password : ""
+* Database name: hogwartsexpress
+* Run migration:
+  - ***php artisan migration:fresh --seed*** command
+  
+⚠️ **IMPORTANT** ⚠️
+
+
+## Tests
+Uncomment the following code lines on **phpunit.xml** is needed before run the test:
+
+      <server name="DB_CONNECTION" value="sqlite"/>
+      <server name="DB_DATABASE" value=":memory:"/>
+
+* php artisan test
+* vendor/bin/phpunit
+
+## Methodology 
+- AGILE with SCRUM
+- Mob Programming
+- Pair Programming
+
+## Core skills
+
+
+## Next steps 
